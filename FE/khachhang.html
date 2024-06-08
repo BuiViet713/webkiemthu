@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="flash_icon.png" type="image/x-icon">
+
+    <title>Cập nhật số</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Electricity</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="update.html" style="background: rgba(0, 0, 0, 0.277);">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Cập nhật số điện</span></a>
+            </li>
+
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="calculate-bill-employee.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Tính tiền điện</span></a>
+            </li>
+
+            <hr class="sidebar-divider my-0">
+
+             <!-- Nav Item - Dashboard -->
+             <li class="nav-item active">
+                <a class="nav-link" href="khachhang.html">
+                   <i class="fas fa-fw fa-tachometer-alt"></i>
+                   <span>Khách Hàng</span></a>
+             </li>
+
+            <hr class="sidebar-divider my-0">
+           
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="dangnhap.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Đăng xuất</span></a>
+            </li>
+
+            <hr class="sidebar-divider my-0">
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div class="ml-5 mt-4">
+                <h5 class="mb-4 font-weight-bold text-primary" style="font-size: 22px;">Đăng ký khách hàng:</h5>
+                
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Thành phố:</h6>
+                    </div>
+                    <div class="col-10">
+                        <select class="form-control city" aria-label="Default select example" style="width: 1100px;">
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Quận/huyện:</h6>
+                    </div>
+                    <div class="col-10">
+                        <select class="form-control district" aria-label="Default select example" style="width: 1100px;">
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Phường/xã:</h6>
+                    </div>
+                    <div class="col-10">
+                        <select class="form-control ward-commune" aria-label="Default select example" style="width: 1100px;">
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Khách Hàng:</h6>
+                    </div>
+                    <div class="col-10">
+                        <select class="form-control customerName" aria-label="Default select example" style="width: 1100px;">
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Mã công tơ:</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="meterCode" placeholder="Enter meter code" style="width: 1100px;">
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Loại công tơ:</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="meterType" placeholder="Enter meter type" style="width: 1100px;">
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Số điện trước:</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="number" class="form-control" id="previousReading" placeholder="Enter previous reading" style="width: 1100px;">
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Địa chỉ:</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="installment_address" placeholder="Enter Address" style="width: 1100px;">
+                    </div>
+                </div>
+        
+                <div class="row mb-4 d-flex flex-row align-items-center">
+                    <div class="col-2">
+                        <h6 class="m-0 font-weight-bold text-primary" style="font-size: 18px;">Ngày cập nhật:</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="date" class="form-control" id="updateDate" style="width: 1100px; font-size: 18px; height: 50px;">
+                    </div>
+                </div>
+                
+                <!-- Button to trigger modal -->
+                <button type="button" class="btn mb-4 btn-primary add-members" data-toggle="modal" data-target="#addMemberModal">
+                    Thêm khách hàng
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/form-customers.js"></script>
+   
+
+
+</body>
+
+</html>

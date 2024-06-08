@@ -1,0 +1,60 @@
+-- Modal -->
+<div class="modal fade" id="addMemberModal" tabindex="-1" aria-labelledby="addMemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addMemberModalLabel">Thêm khách hàng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="add-member-form">
+                    <div class="form-group">
+                        <label for="name">Tên khách hàng:</label>
+                        <select class="form-control" id="name" aria-label="Default select example">
+                            <!-- Option elements will be dynamically populated -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="meterCode">Mã công tơ:</label>
+                        <input type="text" class="form-control" id="meterCode" placeholder="Enter meter code">
+                    </div>
+                    <div class="form-group">
+                        <label for="meterType">Loại công tơ:</label>
+                        <input type="text" class="form-control" id="meterType" placeholder="Enter meter type">
+                    </div>
+                    <div class="form-group">
+                        <label for="previousReading">Số điện trước:</label>
+                        <input type="number" class="form-control" id="previousReading" placeholder="Enter previous reading">
+                    </div>
+                    <div class="form-group">
+                        <label for="updateDate">Ngày cập nhật:</label>
+                        <input type="date" class="form-control" id="updateDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Tỉnh:</label>
+                        <select class="form-control" id="city1" aria-label="Default select example">
+                            <!-- Option elements will be dynamically populated -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="district">Quận/huyện:</label>
+                        <select class="form-control" id="district1" aria-label="Default select example">
+                            <!-- Option elements will be dynamically populated -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ward-commune">Phường/xã:</label>
+                        <select class="form-control" id="ward-commune1" aria-label="Default select example">
+                            <!-- Option elements will be dynamically populated -->
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/form-customers.js"></script>
